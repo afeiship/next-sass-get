@@ -39,21 +39,15 @@ const variables = require(__dirname + '/src/config/themes/default.json').variabl
 
 // ....
 {
-  test: /\.(scss)$/,
-  include: /src/,
-  use: [
-    {
-      loader: 'postcss-loader'
-    },
-    {
-      loader: 'sass-loader',
-      options: {
-        includePaths: [resolve('src', './assets/styles')],
-        functions: nxSassGet(variables)
-      }
-    }
-  ]
-},
+  loader: 'sass-loader',
+  options: {
+    includePaths: [resolve('src', './assets/styles')],
+    functions: nxSassGet(
+      variables,
+      { 'get($inKeys)': null, 'color($inKeys)': 'color' }
+    )
+  }
+}
 ```
 
 3. sass file:
