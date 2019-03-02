@@ -44,6 +44,7 @@ const variables = require(__dirname + '/src/config/themes/default.json').variabl
     includePaths: [resolve('src', './assets/styles')],
     functions: nxSassGet(
       variables,
+      /* THIS IS DEFAULT */
       { 'get($inKeys)': null, 'color($inKeys)': 'color' }
     )
   }
