@@ -28,6 +28,8 @@
     "prettier": "^1.14.3"
   },
   "dependencies": {
-    "next-js-core2": "github:afeiship/next-js-core2"
+    "next-js-core2": "github:afeiship/next-js-core2",
+    "node-sass": "^4.11.0",
+    "node-sass-utils": "^1.1.2"
   }
 }
