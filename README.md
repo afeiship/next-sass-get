@@ -55,7 +55,7 @@ const variables = require(__dirname + '/src/config/themes/default.json').variabl
 .container {
   width: 90%;
   padding: 14px;
-  color: get('color.primary.dark');
+  color: color('primary.dark');
   background: get('color.primary.light');
 }
 ```
