@@ -10,3 +10,7 @@ npm install -S afeiship/next-sass-get --registry=https://registry.npm.taobao.org
 ```js
 //DOCS here!
 ```
+
+## resources:
+- https://github.com/sass-eyeglass/node-sass-utils
+- https://itnext.io/sharing-variables-between-js-and-sass-using-webpack-sass-loader-713f51fa7fa0
