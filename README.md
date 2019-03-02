@@ -43,9 +43,7 @@ const variables = require(__dirname + '/src/config/themes/default.json').variabl
   options: {
     includePaths: [resolve('src', './assets/styles')],
     functions: nxSassGet(
-      variables,
-      /* THIS IS DEFAULT */
-      { 'get($inKeys)': null, 'color($inKeys)': 'color' }
+      variables
     )
   }
 }
@@ -56,7 +54,7 @@ const variables = require(__dirname + '/src/config/themes/default.json').variabl
 .container {
   width: 90%;
   padding: 14px;
-  color: color('primary.dark');
+  color: get('color.primary.dark');
   background: get('color.primary.light');
 }
 ```
