@@ -1,0 +1,28 @@
+{
+  "name": "next-sass-get",
+  "version": "0.0.1",
+  "description": "Deep get for sassLoader based nodeSass",
+  "main": "dist/next-sass-get.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/next-sass-get",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "build",
+    "src",
+    "gulp",
+    "gulpfile.js"
+  ]
+}
