@@ -1,6 +1,5 @@
 {
   "name": "next-sass-get",
-  "version": "0.0.1",
   "description": "Deep get for sassLoader based nodeSass",
   "main": "dist/next-sass-get.js",
   "authors": [
@@ -20,9 +19,8 @@
     "bower_components",
     "test",
     "tests",
-    "build",
     "src",
-    "gulp",
+    "build",
     "gulpfile.js"
   ]
 }

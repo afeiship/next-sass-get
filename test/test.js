@@ -1,17 +1,17 @@
-var nx = require('next-js-core2');
-require('../src/next-sass-get');
+(function () {
+  var nx = require('next-js-core2');
+  var NxSassGet = require('../src/next-sass-get');
 
-test('nx.sassGet', function() {
-  var context = { color: { primary: { default: '#8e8e93', dark: '#f60', light: '#eee' } } };
-  var path = 'color.primary.default';
+  describe('NxSassGet.methods', function () {
+    test('init', function () {
+      var data = {
+        key: 1,
+        value: 2
+      };
+      // console.log(rs1, rs2);
 
-  // var context = {
-  //   color: {
-  //     primary: { default: '#007aff', dark: '#f60' },
-  //     secondary: '#999'
-  //   }
-  // };
-  // var path = 'color.primary.default';
+      // expect(rs1).toBe(true);
 
-  console.log(nx.get(context, path));
-});
+    });
+  });
+}());
