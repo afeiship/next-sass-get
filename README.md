@@ -3,7 +3,7 @@
 
 ## install:
 ```bash
-npm install -S afeiship/next-sass-get --registry=https://registry.npm.taobao.org
+npm install -D afeiship/next-sass-get --registry=https://registry.npm.taobao.org
 ```
 
 ## apis:
