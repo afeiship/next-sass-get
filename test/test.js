@@ -1,17 +1,31 @@
-(function () {
+(function() {
   var nx = require('next-js-core2');
+  var sass = require('node-sass');
   var NxSassGet = require('../src/next-sass-get');
+  var sassString = require('fs')
+    .readFileSync('./test/app.scss')
+    .toString();
 
-  describe('NxSassGet.methods', function () {
-    test('init', function () {
-      var data = {
-        key: 1,
-        value: 2
-      };
-      // console.log(rs1, rs2);
+  describe('NxSassGet.methods', function() {
+    test('syncRender', function() {
+      var result = sass.renderSync({
+        data: sassString,
+        options: {
+          outputStyle: 'expanded'
+        },
+        functions: NxSassGet.create({
+          color: {
+            primary: {
+              default: '#4cd964',
+              dark: '#f60',
+              light: '#eee'
+            },
+            secondary: '#999'
+          }
+        })
+      });
 
-      // expect(rs1).toBe(true);
-
+      console.log(result.css.toString());
     });
   });
-}());
+})();
