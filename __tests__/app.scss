@@ -18,3 +18,14 @@ $colors: (
 .color2 {
   background: get("color.secondary");
 }
+
+
+.bg-cn {
+  $dir: get("locals.cn");
+  background: url("locals/#{$dir}/img/bg.jpg");
+}
+
+.bg-en{
+  $dir: get("locals.en");
+  background: url("locals/#{$dir}/img/bg.jpg");
+}
